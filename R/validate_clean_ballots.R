@@ -1,10 +1,7 @@
 validateBallots <- function(x) {
 
   # 1. Allowed Classes: matrix or data.frame
-  if (!(class(x) %in% c("data.frame", "matrix"))) stop("\nPlease enter object of class either data frame or matrix.")
-
-  # 1a. Convert matrix input to data.frame and proceed with testing (should warn? too much detail?)
-  if (class(x) == "matrix") x <- as.data.frame(x)
+  if (class(x) != "data.frame") stop("\nPlease enter object of class data.frame, or use cleanBallots().")
 
   # 2. Check sanity of column names:
   if (any(is.na(names(x)))) stop("\nPlease provide each candidate's name/identifier as column names.")
