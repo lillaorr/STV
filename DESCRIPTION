@@ -1,0 +1,14 @@
+Package: STV
+Type: Package
+Title: Single Transferable Vote Counting implementation
+Version: 0.1.0
+Author: TO DISCUSS IN MEETING
+Maintainer: John W. Emerson <john.emerson@yale.edu>
+URL: https://github.com/chandrasaksham/STV
+BugReports: https://github.com/chandrasaksham/pkgMaking/STV
+Description: Implements Single Transferable Vote counting system.
+    Currently uses Cambridge, MA method for surplus allocation and
+    Droop method for quota calculation.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
